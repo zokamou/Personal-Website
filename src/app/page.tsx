@@ -5,12 +5,12 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <main className={styles.outline}>
-      <h2 className={styles.header}>Zoe Feller - Projects</h2>
+      <h1 className={styles.header}>Zoe Feller - Projects</h1>
       <div className={styles.main}>
         <div className={styles.pfpLayout}>
           <Image className={styles.pfp} src={profilePic} alt="pfp" />
           <p className={styles.description}>Hello! My name is Zoe Feller and I am a junior at
-          UC Santa Cruz. I am studying Computer Science Game Design with a minor in Compouter Science.
+          UC Santa Cruz. I am studying Computer Science Game Design with a minor in Computer Science.
           I am extremely passionate about game design and full-stack web development. Here are a few of the projects
           I have worked on in the past year, enjoy!
           </p>
