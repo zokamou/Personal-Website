@@ -49,7 +49,9 @@ export default function Home() {
             <h2>
               Dig Champs <span>-&gt;</span>
             </h2>
-            <p>Level-based game inspired by "Dig Champs," from TV show 
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
+            <p>Level-based game inspired by "Dig Champs," from TV show
+              {/* eslint-disable-next-line react/no-unescaped-entities */} 
               "Regular Show", using JavaScript and the Phaser library.
             </p>
           </a>
@@ -62,6 +64,7 @@ export default function Home() {
             <h2>
               Rocket Patrol <span>-&gt;</span>
             </h2>
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
             <p>Arcade shooter game based on "Rocket Patrol" (1978) using JavaScript and the Phaser library.
             </p>
           </a>
