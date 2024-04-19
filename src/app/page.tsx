@@ -1,94 +1,73 @@
-import Image from "next/image";
+import Image from 'next/image';
+import profilePic from "./assets/profile_pic.jpg";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
+    <main className={styles.outline}>
+      <h2 className={styles.header}>Zoe Feller - Projects</h2>
+      <div className={styles.main}>
+        <div className={styles.pfpLayout}>
+          <Image className={styles.pfp} src={profilePic} alt="pfp" />
+          <p className={styles.description}>Hello! My name is Zoe Feller and I am a junior at
+          UC Santa Cruz. I am studying Computer Science Game Design with a minor in Compouter Science.
+          I am extremely passionate about game design and full-stack web development. Here are a few of the projects
+          I have worked on in the past year, enjoy!
+          </p>
+        </div>
+        <div className={styles.grid}>
           <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            href="https://zokamou.github.io/Wind-Up/"
+            className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
+            <h2>
+              Wind-Up <span>-&gt;</span>
+            </h2>
+            <p>Endless runner game created using JavaScript and the Phaser library.</p>
           </a>
+          <a
+            href="https://www.youtube.com/watch?v=XoTbfHAu6jk"
+            className={styles.card}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2>
+              Full-Stack Slack Web App <span>-&gt;</span>
+            </h2>
+            <p>Web app modeled after Slack using JavaScript, React, Express.js, Node.js, SQL, and Postgres.
+              (Click to be directed to a YouTube demonstration, as the repository for this project is private.)
+            </p>
+          </a>
+          <a
+            href="https://keatonshawhan.github.io/Dig_Champs/"
+            className={styles.card}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2>
+              Dig Champs <span>-&gt;</span>
+            </h2>
+            <p>Level-based game inspired by "Dig Champs," from TV show 
+              "Regular Show", using JavaScript and the Phaser library.
+            </p>
+          </a>
+          <a
+            href="https://zokamou.github.io/Rocket-Patrol-Mods/"
+            className={styles.card}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2>
+              Rocket Patrol <span>-&gt;</span>
+            </h2>
+            <p>Arcade shooter game based on "Rocket Patrol" (1978) using JavaScript and the Phaser library.
+            </p>
+          </a>
+        
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        
       </div>
     </main>
   );
