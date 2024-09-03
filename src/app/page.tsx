@@ -31,7 +31,7 @@ export default function Home() {
               NileTrade <span>-&gt;</span>
             </h2>
             <p>Junior capstone project. Developed a full-stack web app 
-              with five other students mocking Amazon's website. Feel free to explore, make an account,
+              with five other students mocking Amazon&apos;s website. Feel free to explore, make an account,
               or even check out as a guest! To use the test Stripe, the card number is 4242 4242 4242 4242
               with any expiration and CVV. </p>
           </a>
