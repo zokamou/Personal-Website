@@ -11,8 +11,8 @@ import ss_image from '../assets/ss.png'
 
 const Projects = () => {
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2.5}}>
-      <Box sx={{ display: 'flex', flexDirection: 'row', gap: 2.5, minWidth: "200px"}}>
+    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 4, margin: "10px"}}>
+      <Box sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' }, gap: 4, minWidth: "200px"}}>
         <ProjectCard
           title="NileTrade"
           description="NileTrade was a junior capstone project. I developed a full-stack web app with five other students mocking Amazon's website. We primarily used React, TypeScript, and PostgreSQL to create the site. Feel free to explore, make an account, or even check out as a guest! To use the test Stripe, the card number is 4242 4242 4242 4242 with any expiration and CVV."
@@ -32,7 +32,7 @@ const Projects = () => {
           image={windup_image}
         />
       </Box>
-      <Box sx={{ display: 'flex', flexDirection: 'row', gap: 2.5}}>
+      <Box sx={{ display: 'flex', flexDirection: { xs: 'column', sm: 'row' }, gap:4}}>
         <ProjectCard
           title="Dig Champs"
           description="Level-based game inspired by 'Dig Champs,' from TV show 'Regular Show', using JavaScript and the Phaser library."
