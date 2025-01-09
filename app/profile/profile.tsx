@@ -21,12 +21,13 @@ export default function Profile() {
             width: '400px',
             height: '500px',
             objectFit: 'cover',
+            borderRadius: "8px"
           }}
           src={profilePic}
           alt="Profile Picture"
         />
         <Box className={styles.horizontal} sx={{padding:"10px"}}>
-          <Typography className={styles.description} sx={{fontSize: "48px", fontWeight:"bold", paddingBottom:"30px", color: "#b82162"}}>
+          <Typography sx={{fontSize: "48px", fontFamily: "Tahoma", fontWeight:"bold", paddingBottom:"10px", color: "#b82162"}}>
             Hello!
           </Typography>
           <Typography
@@ -36,42 +37,25 @@ export default function Profile() {
             }}
             className={styles.description}
           >
-            My name is Zoe Feller and I am a senior at UC Santa Cruz.
-
-            As a Computer Science student, I’m focused on developing practical 
-            solutions in game design and full-stack web development. I have 
-            experience with programming languages like JavaScript, TypeScript, 
-            Python, C, and C++, and I’ve worked with tools such as React, Node.js, 
-            PostgreSQL, Docker, and GraphQL. Through coursework and personal projects, 
-            I’ve built applications from start to finish, including mobile apps with 
-            React Native and web applications using APIs and microservices. I’ve 
-            also worked on optimizing databases and creating clean, functional 
-            user interfaces. I’m committed to building applications that are 
-            user-friendly, efficient, and easy to maintain. I thrive in collaborative 
-            environments and am dedicated to delivering high-quality, scalable 
-            solutions. I enjoy the challenge of problem-solving and continuously 
-            learning new technologies. As I look to expand my experience and 
-            knowledge, I am excited to contribute to a team while furthering my 
-            education and career in tech.
+            My name is Zoe Feller, and I am a senior at UC Santa Cruz 
+            studying Computer Science with a focus on game design and 
+            full-stack web development. I have experience with programming 
+            languages like JavaScript, TypeScript, Python, C, and C++, as 
+            well as tools such as React, Node.js, PostgreSQL, Docker, and 
+            GraphQL. Through coursework and personal projects, I have built 
+            mobile and web applications, optimized databases, and created 
+            functional user interfaces. I thrive in collaborative environments, 
+            have experience working with Scrum and Agile methodologies, and 
+            enjoy tackling challenges with a team-oriented approach. My tutoring 
+            role at UC Santa Cruz further honed my ability to communicate complex 
+            concepts and strengthened my problem-solving and critical thinking 
+            skills. I’m eager to bring my technical expertise, creativity, and 
+            enthusiasm to an internship or entry-level role, where I can continue 
+            to grow as a developer and contribute to impactful projects.
             <br></br><br></br>
-            In addition to my technical skills, I work well in team environments 
-            where collaboration and feedback are encouraged. I enjoy solving problems 
-            and learning along the way, especially when I can work with others to find 
-            solutions. As I continue to grow in my career, I’m eager to bring my skills 
-            to a team where we can learn from one another. My tutoring experience at UC 
-            Santa Cruz helped me improve my ability to explain complex technical 
-            concepts clearly and strengthened my problem-solving and critical thinking 
-            abilities. Throughout various projects, I have collaborated with multiple 
-            teams, utilizing Scrum and Agile methodologies to ensure efficient 
-            workflows and timely delivery of features. This experience has taught me 
-            the importance of adaptability, communication, and continuous improvement 
-            in project development.
+            <strong>Programming Languages</strong>: JavaScript, TypeScript, React, React Native, Python, C, C++,  GraphQL, SQL, Haskell
             <br></br><br></br>
-            I’m eager to bring my experience, creativity, and enthusiasm to an 
-            internship or entry-level role where I can continue to grow as a developer 
-            and contribute to impactful projects. With a genuine passion for technology 
-            and an open mind to exploring new opportunities, I look forward to taking 
-            the next step in my professional journey.
+            <strong>Additional Tools</strong>: Node.js, Next, PostgreSQL, Docker, AWS, TSOA, Swagger, Express, Vite, Nginx, Namecheap, Jest, Construct, Unity, Unreal Engine, PureData, Git, VS Code, Autodesk Inventor, Linux Ubuntu, Vim
 
           </Typography>
         </Box>
