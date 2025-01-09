@@ -1,12 +1,12 @@
 import React from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import profilePic from '../assets/profile_pic.jpg';
 import styles from './projects.module.css';
 import {Button, Box, Tabs, Tab, Typography} from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'; 
 
-const ProjectCard = ({ title, description, link, image }:{title:string, description:string, link:string, image:string}) => {
+const ProjectCard = ({ title, description, link, image }:{title:string, description:string, link:string, image:StaticImageData}) => {
   return (
     <Box sx={{
       border: '1px solid #ddd',
