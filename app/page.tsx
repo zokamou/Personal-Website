@@ -7,7 +7,6 @@ import { useState } from 'react';
 import {Button, Box, Tabs, Tab, Typography} from '@mui/material';
 import Profile from './profile/profile';
 import Projects from './projects/projects';
-import { pink } from '@mui/material/colors';
 
 export default function Home() {
   const [value, setValue] = useState(0);
@@ -24,7 +23,7 @@ export default function Home() {
           onChange={handleChange}
           TabIndicatorProps={{
             style: { 
-              backgroundColor: 'pink',
+              backgroundColor: '#b82162',
               transition: 'none',  
             },
           }}
@@ -37,14 +36,15 @@ export default function Home() {
           <Tab
             label="Projects"
             sx={{
+              fontFamily: 'Tahoma',
               color: 'black',
               fontSize: '16px',
               textTransform: 'none',
               transition: 'none',
               '&.Mui-selected': {
-                color: 'pink',
+                color: '#b82162',
                 transition: 'none',
-
+                fontWeight: 'bold',
               },
             }}
           />
@@ -53,12 +53,13 @@ export default function Home() {
             sx={{
               color: 'black',
               fontSize: '16px',
+              fontFamily: 'Tahoma',
               textTransform: 'none',
               transition: 'none',
               '&.Mui-selected': {
-                color: 'pink',
+                color: '#b82162',
                 transition: 'none',
-
+                fontWeight: 'bold',
               },
               '& .MuiTab-root': {
                 transition: 'none', 
