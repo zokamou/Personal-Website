@@ -38,11 +38,10 @@ export default function Profile() {
             className={styles.description}
           >
             My name is Zoe Feller, and I am a senior at UC Santa Cruz 
-            studying Computer Science with a focus on game design and 
-            full-stack web development. I have experience with programming 
-            languages like JavaScript, TypeScript, Python, C, and C++, as 
+            studying Computer Science Game Design. I have experience with various programming 
+            languages such as JavaScript, TypeScript, Python, C, and C++, as 
             well as tools such as React, Node.js, PostgreSQL, Docker, and 
-            GraphQL. Through coursework and personal projects, I have built 
+            GraphQL. Through coursework and personal projects, I have built full-stack 
             mobile and web applications, optimized databases, and created 
             functional user interfaces. I thrive in collaborative environments, 
             have experience working with Scrum and Agile methodologies, and 
