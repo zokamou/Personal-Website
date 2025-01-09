@@ -27,13 +27,13 @@ export default function Profile() {
           alt="Profile Picture"
         />
         <Box className={styles.horizontal} sx={{padding:"10px"}}>
-          <Typography sx={{fontSize: "48px", fontFamily: "Tahoma", fontWeight:"bold", paddingBottom:"10px", color: "#b82162"}}>
+          <Typography sx={{fontSize: "48px", fontFamily: "Tahoma, Arial, sans-serif", fontWeight:"bold", paddingBottom:"10px", color: "#b82162"}}>
             Hello!
           </Typography>
           <Typography
             sx={{
               fontSize: { xs: '16px', sm: '18px' },
-              fontFamily: "Tahoma"
+              fontFamily: "Tahoma, Arial, sans-serif"
             }}
             className={styles.description}
           >
