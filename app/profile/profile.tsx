@@ -33,7 +33,7 @@ export default function Profile() {
           <Typography
             sx={{
               fontSize: { xs: '16px', sm: '18px' },
-              //textAlign: { xs: 'center', sm: 'left' },
+              fontFamily: "Tahoma"
             }}
             className={styles.description}
           >
