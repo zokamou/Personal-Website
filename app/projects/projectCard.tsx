@@ -1,12 +1,16 @@
 import React from 'react';
 import Image, { StaticImageData } from 'next/image';
-import profilePic from '../assets/profile_pic.jpg';
 import styles from './projects.module.css';
-import {Button, Box, Tabs, Tab, Typography} from '@mui/material';
+import {Box} from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'; 
+import Carousel from 'react-material-ui-carousel'
 
-const ProjectCard = ({ title, description, link, image }:{title:string, description:string, link:string, image:StaticImageData}) => {
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
+
+const ProjectCard = ({ title, description, link, images }:{title:string, description:string, link:string, images:StaticImageData[]}) => {
   return (
     <Box sx={{
       border: '1px solid #ddd',
@@ -17,28 +21,34 @@ const ProjectCard = ({ title, description, link, image }:{title:string, descript
       minWidth: "350px"
     }}
     >
-      <a
-        href={link}
-        className={styles.card}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
         <Box>
-          <Image
-            src={image}
-            alt={title}
-            style={{ borderTopRightRadius: '8px', borderTopLeftRadius: '8px', width: "100%", height: "250px" }}
-          />
+          <Carousel autoPlay={false}>
+            {images.map((image, index) => (
+              <Box key={index}>
+                  <Image
+                    src={image}
+                    alt={title}
+                    style={{ borderTopRightRadius: '8px', borderTopLeftRadius: '8px', width: "100%", height: "250px" }}
+                  />
+              </Box>
+            ))}
+          </Carousel>
         </Box>
         <Box sx={{padding: "16px"}}>
-        <h2>
-          {title} <span><FontAwesomeIcon icon={faArrowRight} /></span>
-        </h2>
-        <p>
-          {description}
-        </p>
+          <a
+            href={link}
+            className={styles.card}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2>
+              {title} <span><FontAwesomeIcon icon={faArrowRight} /></span>
+            </h2>
+            <p>
+              {description}
+            </p>
+          </a>
         </Box>
-      </a>
     </Box>
   );
 };

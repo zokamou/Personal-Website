@@ -52,9 +52,9 @@ export default function Profile() {
             enthusiasm to an internship or entry-level role, where I can continue 
             to grow as a developer and contribute to impactful projects.
             <br></br><br></br>
-            <strong>Programming Languages</strong>: JavaScript, TypeScript, React, React Native, Python, C, C++,  GraphQL, SQL, Haskell
+            <strong>Programming Languages</strong>: JavaScript, TypeScript, React, React Native, C, C#, C++,  Python, GraphQL, SQL
             <br></br><br></br>
-            <strong>Additional Tools</strong>: Node.js, Next, PostgreSQL, Docker, AWS, TSOA, Swagger, Express, Vite, Nginx, Namecheap, Jest, Construct, Unity, Unreal Engine, PureData, Git, VS Code, Autodesk Inventor, Linux Ubuntu, Vim
+            <strong>Additional Tools</strong>: Unity, PostgreSQL, Express, Node.js, Vite, Nginx,  Next, Docker, AWS, TSOA, Swagger, Namecheap, Jest, Construct, PureData, Git, VS Code, Autodesk Inventor, Linux Ubuntu, Vim
 
           </Typography>
         </Box>
