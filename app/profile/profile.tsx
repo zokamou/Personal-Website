@@ -4,8 +4,8 @@ import profilePic from '../assets/profile_pic.jpg';
 import styles from "./profile.module.css";
 import React from 'react';
 import { useState } from 'react';
-import { Button, Box, Tabs, Tab, Typography } from '@mui/material';
-
+import { Button, Box, Tabs, Tab, Typography, Icon, IconButton } from '@mui/material';
+import { LinkedIn, GitHub } from '@mui/icons-material';
 export default function Profile() {
   return (
     <Box sx={{ padding: '20px' }}>
@@ -16,16 +16,37 @@ export default function Profile() {
           gap: 4,
         }}
       >
-        <Image
-          style={{
-            width: '400px',
-            height: '500px',
-            objectFit: 'cover',
-            borderRadius: "8px"
-          }}
-          src={profilePic}
-          alt="Profile Picture"
-        />
+        <Box sx={{display:"flex", flexDirection: "column"}}>
+          <Image
+            style={{
+              width: '400px',
+              height: '500px',
+              objectFit: 'cover',
+              borderRadius: "8px",
+              marginBottom:"40px"
+            }}
+            src={profilePic}
+            alt="Profile Picture"
+          />
+          <Box sx={{display:"flex", flexDirection: "row", justifyContent:"center"}}>
+            <a href="https://www.linkedin.com/in/zoe-feller/" target="_blank" rel="noopener noreferrer" style={{color: 'black', textDecoration:'none'}}>
+              <Box sx={{display:"flex", flexDirection:"row"}}>
+                  <LinkedIn sx={{color: '#575757', scale: "1.3"}}/>
+                  <Typography sx={{marginLeft: "10px", fontFamily: "Tahoma", color: '#575757', textDecoration:'none', fontSize:"18px"}}>
+                    LinkedIn
+                  </Typography>
+              </Box>
+            </a>
+            <a href="https://github.com/zokamou" target="_blank" rel="noopener noreferrer" style={{color: 'black', textDecoration:'none'}}>
+              <Box sx={{marginLeft: "50px", display:"flex", flexDirection:"row"}}>
+                  <GitHub sx={{color: '#575757', scale: "1.3"}}/>
+                  <Typography sx={{marginLeft: "10px", fontFamily: "Tahoma", color: '#575757', textDecoration:'none', fontSize:"18px"}}>
+                    Github
+                  </Typography>
+              </Box>
+            </a>
+          </Box>
+        </Box>
         <Box className={styles.horizontal} sx={{padding:"10px"}}>
           <Typography sx={{fontSize: "48px", fontFamily: "Tahoma, Arial, sans-serif", fontWeight:"bold", paddingBottom:"10px", color: "#b82162"}}>
             Hello!
@@ -55,7 +76,6 @@ export default function Profile() {
             <strong>Programming Languages</strong>: JavaScript, TypeScript, React, React Native, C, C#, C++,  Python, GraphQL, SQL
             <br></br><br></br>
             <strong>Additional Tools</strong>: Unity, PostgreSQL, Express, Node.js, Vite, Nginx,  Next, Docker, AWS, TSOA, Swagger, Namecheap, Jest, Construct, PureData, Git, VS Code, Autodesk Inventor, Linux Ubuntu, Vim
-
           </Typography>
         </Box>
       </Box>

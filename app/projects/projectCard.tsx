@@ -44,7 +44,7 @@ const ProjectCard = ({ title, description, link, images }:{title:string, descrip
             <h2>
               {title} <span><FontAwesomeIcon icon={faArrowRight} /></span>
             </h2>
-            <p>
+            <p style={{lineHeight: 1.5}}>
               {description}
             </p>
           </a>
