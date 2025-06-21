@@ -58,20 +58,32 @@ export default function Profile() {
             }}
             className={styles.description}
           >
-            My name is Zoe Feller, and I am a senior at UC Santa Cruz 
-            studying Computer Science Game Design. I have experience with various programming 
-            languages such as JavaScript, TypeScript, Python, C, and C++, as 
-            well as tools such as React, Node.js, PostgreSQL, Docker, and 
-            GraphQL. Through coursework and personal projects, I have built full-stack 
-            mobile and web applications, optimized databases, and created 
-            functional user interfaces. I thrive in collaborative environments, 
-            have experience working with Scrum and Agile methodologies, and 
-            enjoy tackling challenges with a team-oriented approach. My tutoring 
-            role at UC Santa Cruz further honed my ability to communicate complex 
-            concepts and strengthened my problem-solving and critical thinking 
-            skills. I’m eager to bring my technical expertise, creativity, and 
-            enthusiasm to an internship or entry-level role, where I can continue 
-            to grow as a developer and contribute to impactful projects.
+            Hello! My name is Zoe Feller, and I recently graduated with a B.S. 
+            in Computer Science: Game Design and a Minor in Computer Science 
+            from the University of California Santa Cruz.
+            <br></br><br></br>
+            I have always been compelled to combine creativity with education and
+            development. One of my favorite things about being in the Computer Science
+            field is getting to see my solutions come to life. There’s something
+            incredibly rewarding about seeing my code evolve into interactive experiences
+            that people can actually play and enjoy. I discovered my love for programming
+            through the excitement of building games and experimenting with new 
+            technologies, watching how abstract logic and systems could generate 
+            fun, engaging outputs. 
+            <br></br><br></br>
+
+            That same creative spark led me to explore other areas of development, 
+            including system design, database architecture, and full-stack development. 
+            I’ve built everything from simple websites for friends and family to complex 
+            web and mobile applications using tools like React, TypeScript, different APIs,
+            PostgreSQL, and AWS. 
+            <br></br><br></br>
+            One of the things I value most in any field is creativity. It’s not just about 
+            writing code, it’s about solving problems in new ways, designing user experiences 
+            that matter, and building things that people enjoy using. I play games, I study 
+            how they work, and now, I get to create them. Being part of that process, turning 
+            ideas into something playable and meaningful, is what motivates me to continue 
+            making things I enjoy.
             <br></br><br></br>
             <strong>Programming Languages</strong>: JavaScript, TypeScript, React, React Native, C, C#, C++,  Python, GraphQL, SQL
             <br></br><br></br>

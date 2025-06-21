@@ -28,10 +28,6 @@ import ll3 from '../assets/ll3.png'
 import ll4 from '../assets/ll4.png'
 
 
-
-
-
-
 const Projects = () => {
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', gap: 4, margin: "10px"}}>
