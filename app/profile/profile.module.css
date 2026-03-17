@@ -1,9 +1,0 @@
-.description {
-  font-family: "Tahoma", "Arial";
-  color: rgb(68, 66, 66);
-}
-
-.horizontal {
-  display: flex;
-  flex-direction: column;
-}
