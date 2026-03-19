@@ -5,6 +5,9 @@ export class HomeScene extends Phaser.Scene {
   private zoeSprite!: Phaser.GameObjects.Sprite;
   private bubbleSprite!: Phaser.GameObjects.Sprite;
 
+  private speechContainer!: Phaser.GameObjects.Container;
+  private bubbleText!: Phaser.GameObjects.BitmapText;
+
   private robotSprite!: Phaser.GameObjects.Sprite;
 
   private workPopupContainer!: Phaser.GameObjects.Container;
@@ -38,7 +41,7 @@ export class HomeScene extends Phaser.Scene {
 
     // zoe
     this.load.image('zoe', '/assets/zoe-character.png');
-    this.load.image('bubble', '/assets/speech_bubble.png');
+    this.load.image('bubble', '/assets/thick_blank_bubble.png');
 
     // desk
     this.load.spritesheet('robot', '/assets/robot_toy-sheet.png', {
@@ -51,6 +54,8 @@ export class HomeScene extends Phaser.Scene {
     // posters
     this.load.image('office-posters', '/assets/office-posters.png');
     this.load.image('dog-popup', '/assets/DogPopup.png');
+
+    this.load.bitmapFont('Jersey10', '/assets/fonts/Jersey10.png', '/assets/fonts/Jersey10.xml');
   }
 
   create() {
@@ -164,8 +169,24 @@ export class HomeScene extends Phaser.Scene {
     // zoe
     this.zoeSprite = this.add.sprite(0, 0, 'zoe').setOrigin(0.5, 1);
 
-    // speech bubble
+    // speech bubble + text container
+    this.speechContainer = this.add.container(0, 0);
+
     this.bubbleSprite = this.add.sprite(0, 0, 'bubble').setOrigin(0, 1);
+    this.bubbleSprite.setScale(1.15);
+
+    this.bubbleText = this.add.bitmapText(
+      0,
+      0,
+      'Jersey10',
+      'Hi! My name is Zoe Feller. Welcome to my site! Feel free to explore my office, play games, and view demos. Enjoy!',
+      48,
+    );
+    this.bubbleText.setMaxWidth(640);
+    this.bubbleText.setPosition(80, -330);
+    this.bubbleText.lineSpacing = -10;
+
+    this.speechContainer.add([this.bubbleSprite, this.bubbleText]);
 
     // ui reactive
     this.handleResize();
@@ -238,7 +259,11 @@ export class HomeScene extends Phaser.Scene {
 
     const bubbleOffsetX = -350;
     const bubbleOffsetY = -220;
-    this.bubbleSprite.setScale(scale * 0.75);
-    this.bubbleSprite.setPosition(centerX + bubbleOffsetX * scale, bottomY + bubbleOffsetY * scale);
+
+    this.speechContainer.setScale(scale * 0.9);
+    this.speechContainer.setPosition(
+      Math.round(centerX + bubbleOffsetX * scale),
+      Math.round(bottomY + bubbleOffsetY * scale),
+    );
   }
 }

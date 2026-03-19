@@ -171,7 +171,6 @@ export default function Games() {
                 </Typography>
               </Box>
 
-              {/* --- 2. DESKTOP-ONLY BUTTON --- */}
               {!isMobile && (
                 <Box
                   component="a"
@@ -180,15 +179,18 @@ export default function Games() {
                   rel="noopener noreferrer"
                   sx={{
                     position: 'absolute',
+                    transform: 'scale(1.2)',
                     zIndex: 4,
                     display: 'inline-block',
                     bottom: '16%',
-                    right: '6%',
+                    right: '6.5%',
+                    transition: 'transform 0.2s ease',
+
                     '&:hover': {
-                      transform: 'scale(1.05)',
+                      transform: 'scale(1.25)',
                     },
                     '&:active': {
-                      transform: 'scale(0.95)',
+                      transform: 'scale(1.15)',
                     },
                   }}
                 >

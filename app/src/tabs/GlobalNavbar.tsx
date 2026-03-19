@@ -4,6 +4,18 @@ import { useNavigate } from 'react-router-dom';
 export default function GlobalNavbar({ filled = false }: { filled?: boolean }) {
   const navigate = useNavigate();
 
+  const iconButtonStyles = {
+    p: 0,
+    backgroundColor: 'transparent',
+    '&:hover': { backgroundColor: 'transparent' },
+    '& img': {
+      height: 60,
+      transition: 'transform 0.2s ease',
+      scale: 1.5,
+    },
+    '&:hover img': { transform: 'scale(1.05)' },
+  };
+
   return (
     <AppBar
       position="fixed"
@@ -23,60 +35,36 @@ export default function GlobalNavbar({ filled = false }: { filled?: boolean }) {
           }}
         >
           <IconButton
+            disableRipple
+            disableFocusRipple
             onClick={() => navigate('/')}
-            sx={{
-              p: 0,
-              '& img': {
-                height: 60,
-                transition: 'transform 0.2s ease',
-                scale: 1.5,
-              },
-              '&:hover img': { transform: 'scale(1.05)' },
-            }}
+            sx={iconButtonStyles}
           >
             <img src="/assets/HomeButton.png" alt="Home" />
           </IconButton>
           <IconButton
+            disableRipple
+            disableFocusRipple
             onClick={() => navigate('/about')}
-            sx={{
-              p: 0,
-              '& img': {
-                height: 60,
-                transition: 'transform 0.2s ease',
-                scale: 1.5,
-              },
-              '&:hover img': { transform: 'scale(1.05)' },
-            }}
+            sx={iconButtonStyles}
           >
             <img src="/assets/AboutButton.png" alt="About" />
           </IconButton>
 
           <IconButton
+            disableRipple
+            disableFocusRipple
             onClick={() => navigate('/web')}
-            sx={{
-              p: 0,
-              '& img': {
-                height: 60,
-                transition: 'transform 0.2s ease',
-                scale: 1.5,
-              },
-              '&:hover img': { transform: 'scale(1.05)' },
-            }}
+            sx={iconButtonStyles}
           >
             <img src="/assets/WebButton.png" alt="Web" />
           </IconButton>
 
           <IconButton
+            disableRipple
+            disableFocusRipple
             onClick={() => navigate('/games')}
-            sx={{
-              p: 0,
-              '& img': {
-                height: 60,
-                transition: 'transform 0.2s ease',
-                scale: 1.5,
-              },
-              '&:hover img': { transform: 'scale(1.05)' },
-            }}
+            sx={iconButtonStyles}
           >
             <img src="/assets/GamesButton.png" alt="Games" />
           </IconButton>

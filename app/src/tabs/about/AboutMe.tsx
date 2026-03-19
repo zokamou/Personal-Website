@@ -94,7 +94,12 @@ export default function AboutMe() {
                   mb: 1,
                 })}
               >
-                Hi! I’m Zoe — a software engineer who loves building playful, thoughtful digital experiences. I work across full-stack web, games, and mobile apps, and I’m especially drawn to projects that blend creativity with technical problem-solving. I enjoy learning new technologies, collaborating with teams, and turning ideas into interactive things people can actually use. When I’m not coding, I’m probably crafting, playing video games, or soaking up some sunshine.
+                Hi, I’m Zoe! I’m currently a full-stack developer at Revenaut AI. Throughout my
+                career, I’ve worked across full-stack web development, games, and mobile
+                applications, and I enjoy building and contributing to end-to-end products. My
+                background in game design influences how I approach development. I focus on making
+                things feel clear, responsive, and easy to use. Outside of coding, I enjoy crafts,
+                video games, and spending time outdoors!
               </Typography>
 
               <Typography
@@ -157,7 +162,7 @@ export default function AboutMe() {
                 variant="h3"
                 sx={{
                   fontFamily: '"Jersey 10", monospace',
-                  fontSize: { xs: '1.5rem', md: '2rem' },
+                  fontSize: { xs: '1.8rem', md: '2.4rem' },
                   color: '#9a384a',
                   mb: 0.5,
                   lineHeight: 1,
@@ -183,7 +188,8 @@ export default function AboutMe() {
                   lineHeight: 1.1,
                 })}
               >
-                JavaScript/TypeScript, Java, Python, C/C++/C#, React, React Native, Spring Boot, GraphQL, Unity, Docker, AWS, GCP
+                JavaScript/TypeScript, Java, Python, C/C++/C#, React, React Native, Spring Boot,
+                GraphQL, Unity, Docker, AWS, GCP
               </Typography>
             </Box>
           </Box>
